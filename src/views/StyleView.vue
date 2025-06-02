@@ -55,7 +55,8 @@ const handleStyleChange = (slug) => {
             <h1 class="text-xl md:text-2xl font-black capitalize">
               {{ style }}
             </h1>
-            <h2 class="text-lg md:text-xl">& Dark mode</h2>
+            <h2 v-if="style === 'white'" class="text-lg md:text-xl">& Dark mode and Light mode</h2>
+            <h2 v-else class="text-lg md:text-xl">& Light mode</h2>
           </CardBox>
         </div>
       </SectionMain>
